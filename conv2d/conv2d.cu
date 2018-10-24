@@ -4,7 +4,7 @@ using namespace std;
 
 #define mask_width 16
 #define tile_width 16
-__constant__ float M_dc[mask_width][mask_width];  // save mask in constatn memory
+__constant__ float M_dc[mask_width][mask_width];  // save mask in constant memory
 
 
 __global__ void conv2d_kernel(float *N_d, float *P_d, int n) {
