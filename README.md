@@ -10,5 +10,5 @@ mat_mul_tile.cu: Compute matrix multiplication using shared memory. The matrix i
 
 4. vec_add_multi_gpus: Compute vector addition using multiple GPUs on onde node of a computer cluster. There is no data communication between GPUs in vector addition. The number of GPUs on the node is automatically detected and all GPUs on the node are used. OpenMP is used for CPU multithreading. Each CPU thread assigns a CUDA kernel to one GPU. 
 
-5. Convolution and activation using CUDNN.
+5. conv_cudnn: Build a typical convolution layer in CNN. The CUDNN library is used to compute the convolution and activation processes. The OpenCV library is used to load, normalize and save images.  
 
